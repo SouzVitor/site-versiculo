@@ -105,6 +105,12 @@ footer img {
   border-radius: 6px;
 }
 
+footer .product span {
+  color: #000; /* cor preta */
+  text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.6); /* sombra cinza suave */
+  font-weight: 500;
+  margin-bottom: 5px;
+}
 
 /* Responsivo */
 @media (max-width: 768px) {
