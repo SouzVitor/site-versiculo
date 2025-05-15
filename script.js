@@ -1,7 +1,5 @@
-
 const clockElement = document.getElementById('clock');
 
-// Atualiza o relógio com a hora correta
 async function updateClock() {
     try {
         const response = await fetch('https://worldtimeapi.org/api/ip');
@@ -16,3 +14,9 @@ async function updateClock() {
         clockElement.textContent = "Erro ao carregar a hora.";
     }
 }
+
+// Chama inicialmente
+updateClock();
+
+// Atualiza a cada 1 segundo
+setInterval(updateClock, 1000);
